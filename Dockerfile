@@ -19,7 +19,8 @@ RUN  \
      echo 'hosts: files mdns4_minimal [NOTFOUND=return] dns mdns4' >> /etc/nsswitch.conf && \
      go get -v -d github.com/krhanmehmet/minio
 
-COPY github.com/krhanmehmet/minio /go/src/github.com/minio/minio 
+COPY github.com/krhanmehmet /go/src/github.com/minio 
+
 RUN \
      cd /go/src/github.com/minio/minio && \
      go install -v -ldflags "$(go run buildscripts/gen-ldflags.go)" && \
