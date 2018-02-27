@@ -28,11 +28,11 @@ import (
 	"runtime"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/minio/mc/pkg/console"
-	minio "github.com/minio/minio/cmd"
+	"github.com/krhanmehmet/mc/pkg/console"
+	minio "github.com/krhanmehmet/minio/cmd"
 
 	// Import gateway
-	_ "github.com/minio/minio/cmd/gateway"
+	_ "github.com/krhanmehmet/minio/cmd/gateway"
 )
 
 const (
